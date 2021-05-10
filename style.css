@@ -3,21 +3,25 @@
 }
 body {
 	font-size: 62.5%;
+	font-family: sans-serif;
 }
 .container {
 	display: flex;
 	background: #3b3837;
 	color: white;
 	font-size: 20px;
-	height: vh;
+	height: 100vh;
 }
-
-
-
 button {
 	border-radius: 100%; 
-	height:15%;
-	width: 18%;
+	color: white;
+	background: #3b3837;
+	
+}
+.menuimage {
+	width: 40px;
+	height: 40px;
+	margin-top: 60px;
 }
 
 .menu {
@@ -25,10 +29,11 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	border-right: solid black 1.8px;
-	justify-content: space-between;
+	justify-content: space-between;	
+}
 
-	
-	
+a {
+	text-decoration: none;
 }
 
 nav {
@@ -37,19 +42,20 @@ nav {
 	text-align: center;
 }
 
+
 nav a {
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: solid 0.5px gray;
-	text-decoration: none;
 	color: white;
 	margin-left: 30%;
 	margin-right: 30%;
 	
 }
 nav a:hover, nav a.current {      
-        color: orange;
+        color: #f26988;
+		border-color: #f26988;
     }
 
 
@@ -66,6 +72,14 @@ nav a:hover, nav a.current {
 	
 	width: 100%;
 
+}
+.hiddenmenubutton {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	padding: 15px;
+	display: none;
+	
 }
 
 .info {
@@ -99,5 +113,8 @@ footer {
 	.right, .left {
 		width: 100%;
 		
+	}
+	.hiddenmenubutton {
+		display: inline;
 	}
 }
