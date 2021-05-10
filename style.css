@@ -4,18 +4,20 @@
 body {
 	font-size: 62.5%;
 	font-family: sans-serif;
+	background: #3b3837;
 }
 .container {
 	display: flex;
-	background: #3b3837;
 	color: white;
 	font-size: 20px;
-	height: 100vh;
+
+	
 }
 button {
 	border-radius: 100%; 
-	color: white;
+	color: #ff7292;;
 	background: #3b3837;
+	border-color: #ff7292;
 	
 }
 .menuimage {
@@ -29,8 +31,14 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	border-right: solid black 1.8px;
-	justify-content: space-between;	
+	justify-content: space-between;
+	position: fixed;
+	height: 100vh;
+	background-color: #3b3837;
+	
 }
+
+
 
 a {
 	text-decoration: none;
@@ -54,9 +62,10 @@ nav a {
 	
 }
 nav a:hover, nav a.current {      
-        color: #f26988;
-		border-color: #f26988;
+        color: #ff7292;
+		border-color: #ff7292;
     }
+
 
 
 .navigation, .links, .logo {
@@ -71,14 +80,18 @@ nav a:hover, nav a.current {
 .rightsection {
 	
 	width: 100%;
-
+	margin-left: 15%;
 }
+
 .hiddenmenubutton {
 	position: absolute;
 	top: 2%;
 	right: 2%;
 	padding: 15px;
+	color: #ff7292;
+	border-color: #ff7292;
 	display: none;
+	
 	
 }
 
@@ -87,16 +100,46 @@ nav a:hover, nav a.current {
 	justify-content: space-around;
 	padding: 30px;
 	margin: 8%;
+	height: auto;
+	flex-wrap: wrap;
 	
+}
+
+h3 {
+	border-bottom: dotted 1.5px #ff7292;
+	padding-bottom: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .left, .right {
 	width: 30%;
 }
 
+h1 {
+	color: #ff7292;
+}
+.contactheader {
+	text-align: center;
+	margin-bottom: 60px;
+	
+}
+
+.contact {
+	width: 100%;
+	
+}
+.left.contactleft {
+	text-align: center;
+	color: #ff7292;
+	width:100%;
+}
+span {
+	color: white;
+}
 footer {
 	text-align: center;
-	border-top: solid 1px gray;
+	border-top: solid 1px #ff7292;
 	margin: 10%;
 	padding: 10px;
 }
@@ -105,16 +148,15 @@ footer {
 	.menu {
 		display: none;
 	}
-	.info {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
+
 	.right, .left {
 		width: 100%;
 		
 	}
 	.hiddenmenubutton {
 		display: inline;
+	}
+	.rightsection {
+		margin-left: auto;
 	}
 }
