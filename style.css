@@ -4,7 +4,7 @@
 body {
 	font-size: 62.5%;
 	font-family: sans-serif;
-	background: #3b3837;
+	background: #393634;
 }
 .container {
 	display: flex;
@@ -26,6 +26,11 @@ button {
 	margin-top: 60px;
 }
 
+.menuimage.read {
+	width: 70px;
+	height: 90px;
+}
+
 .menu {
 	width: 15%;
 	display: flex;
@@ -34,7 +39,9 @@ button {
 	justify-content: space-between;
 	position: fixed;
 	height: 100vh;
-	background-color: #3b3837;
+	background-color: #3b3837;/*#393634*/
+
+
 	
 }
 
@@ -99,37 +106,37 @@ nav a:hover, nav a.current {
 	display:flex;
 	justify-content: space-around;
 	padding: 30px;
-	margin: 8%;
+	margin: 7%;
 	height: auto;
 	flex-wrap: wrap;
 	
 }
 
 h3 {
-	border-bottom: dotted 1.5px #ff7292;
-	padding-bottom: 3%;
+	border-bottom: dotted 0.5px #ff7292;
+	padding-bottom: 2.5%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
 .left, .right {
-	width: 30%;
+	width: 35%;
 }
 
 h1 {
 	color: #ff7292;
 }
 .contactheader {
-	text-align: center;
-	margin-bottom: 60px;
+	padding: 20px;
+
 	
+}
+.contactimage {
+	margin: 0;
 }
 
-.contact {
-	width: 100%;
-	
-}
-.left.contactleft {
+
+.left.contactleft, .contact {
 	text-align: center;
 	color: #ff7292;
 	width:100%;
@@ -140,9 +147,21 @@ span {
 footer {
 	text-align: center;
 	border-top: solid 1px #ff7292;
-	margin: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
 	padding: 10px;
 }
+.info.contactinfo {
+	margin-bottom: auto;
+	margin-top: 5%;
+}
+
+.avatar {
+	height: 500px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
 	.menu {
