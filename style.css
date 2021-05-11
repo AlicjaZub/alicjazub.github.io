@@ -9,46 +9,44 @@ body {
 .container {
 	display: flex;
 	color: white;
-	font-size: 20px;
-
-	
+	font-size: 1.2rem;
 }
+
 button {
 	border-radius: 100%; 
 	color: #ff7292;;
 	background: #3b3837;
 	border-color: #ff7292;
-	
+	cursor: pointer;	
 }
-.menuimage {
+
+.menu-image {
 	width: 40px;
 	height: 40px;
 	margin-top: 60px;
 }
 
-.menuimage.read {
-	width: 70px;
-	height: 90px;
+.menu-image.logo {
+	width: 6rem;
+	height: 6rem;
+	margin-top: 30px;
 }
 
 .menu {
 	width: 15%;
 	display: flex;
 	flex-wrap: wrap;
-	border-right: solid black 1.8px;
+	border-right: solid black 1px;
 	justify-content: space-between;
 	position: fixed;
 	height: 100vh;
-	background-color: #3b3837;/*#393634*/
-
-
+	background-color: #3b3837;/*#393634*/	
 	
 }
 
-
-
 a {
 	text-decoration: none;
+	color: #ff7292; ;
 }
 
 nav {
@@ -56,7 +54,6 @@ nav {
 	flex-wrap: wrap;
 	text-align: center;
 }
-
 
 nav a {
 	width: 100%;
@@ -66,31 +63,31 @@ nav a {
 	color: white;
 	margin-left: 30%;
 	margin-right: 30%;
+	text-shadow: 3px 3px #564447;
 	
 }
+
 nav a:hover, nav a.current {      
         color: #ff7292;
 		border-color: #ff7292;
     }
-
-
-
+	
 .navigation, .links, .logo {
 	width: 100%;
 }
+
 .links, .logo {
 	display: flex;
 	justify-content: space-around;
+	
 }
 
-
-.rightsection {
-	
+.right-section {
 	width: 100%;
 	margin-left: 15%;
 }
 
-.hiddenmenubutton {
+.hidden-menu-button {
 	position: absolute;
 	top: 2%;
 	right: 2%;
@@ -98,8 +95,6 @@ nav a:hover, nav a.current {
 	color: #ff7292;
 	border-color: #ff7292;
 	display: none;
-	
-	
 }
 
 .info {
@@ -109,7 +104,27 @@ nav a:hover, nav a.current {
 	margin: 7%;
 	height: auto;
 	flex-wrap: wrap;
-	
+}
+
+.info.info-portfolio {
+	margin-top: auto;
+}
+
+.welcome-heading {
+	font-size: 4rem;
+	font-style: italic;
+	text-shadow: 10px 10px #513c40;
+	font-family: script;
+	text-align: center;
+}
+.welcome-heading2 {
+	font-size: 2rem;
+	font-family: script;
+	text-align: center;
+}
+
+h1,h2, h4 {
+	color: #ff7292;
 }
 
 h3 {
@@ -120,30 +135,67 @@ h3 {
 }
 
 .left, .right {
-	width: 35%;
-}
-
-h1 {
-	color: #ff7292;
-}
-.contactheader {
-	padding: 20px;
-
-	
-}
-.contactimage {
-	margin: 0;
+	width: 40%;
 }
 
 
-.left.contactleft, .contact {
+
+.avatar, .contact-image { /*contact image can be as it is, tbc*/
+	width: 100%;
+}
+
+
+
+
+.left.contact-left, .contact {
 	text-align: center;
 	color: #ff7292;
 	width:100%;
 }
+
+.left.project-left {
+	width: 50%;
+}
+
 span {
 	color: white;
 }
+
+.project-details {
+	text-align: center;
+	width: auto;
+}
+
+.project-img { /*tbc depending on how the project looks*/
+	padding-top: 6%;
+	width:100%;
+}
+
+.software-used-p {
+	color: #ff7292;
+	font-size: 0.8rem;
+	padding: 5%;
+	
+}
+.portfolio-img, .porfolio-heading {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.porfolio-heading h1 {
+	margin-top: 6%;
+	font-style: italic;
+	text-shadow: 8px 8px #5e464a;
+	font-family: script;
+	text-align: center;
+}
+
+.portfolio-img img {
+	width: 25%;
+	margin-bottom: 6%;
+}
+
 footer {
 	text-align: center;
 	border-top: solid 1px #ff7292;
@@ -152,30 +204,41 @@ footer {
 	margin-bottom: 10%;
 	padding: 10px;
 }
-.info.contactinfo {
+
+.info.contact-info {
 	margin-bottom: auto;
 	margin-top: 5%;
 }
 
-.avatar {
-	height: 500px;
+.footer-p {
+	color: gray;
+	font-size: 0.8rem;
 }
 
 
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
 	.menu {
 		display: none;
 	}
 
 	.right, .left {
-		width: 100%;
-		
+		width: 100%;		
 	}
-	.hiddenmenubutton {
+	
+	.hidden-menu-button {
 		display: inline;
 	}
-	.rightsection {
+	
+	.right-section {
 		margin-left: auto;
 	}
 }
+
+
+
+/*
+Extra small <576px (small phones)
+Small ≥576px (phones)
+Medium ≥768px (tablets)
+Large ≥992px (laptops)
+Extra large ≥1200px (desktop monitors)*/
