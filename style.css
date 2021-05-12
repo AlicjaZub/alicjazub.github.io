@@ -21,7 +21,6 @@ p {
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
 h1, h2, h4 {
@@ -83,12 +82,13 @@ nav a {
 	border-bottom: solid 0.5px gray;
 	margin-left: 30%;
 	margin-right: 30%;
+	color: white;
 	
 }
 
 nav a:hover, nav a.current {      
-        color: #ff7292;
-		border-color: #ff7292;
+    color: #ff7292;
+	border-color: #ff7292;
 }
 	
 .navigation, .links, .logo {
@@ -99,6 +99,10 @@ nav a:hover, nav a.current {
 	display: flex;
 	justify-content: space-around;
 	
+}
+
+.left.left-contact a {
+	color: #ff7292;
 }
 
 .right-section {
@@ -157,7 +161,10 @@ nav a:hover, nav a.current {
 .contact, .left.contact-left {
 	text-align: center;
 	color: #ff7292;
-	width:100%;
+	width: 100%;
+}
+.left.contact-left a {
+	color: #ff7292;
 }
 
 .project-details {
@@ -206,6 +213,7 @@ footer {
 	color: gray;
 	font-size: 0.8rem;
 	line-height: 1rem;
+	padding: 0;
 }
 
 @media only screen and (max-width: 992px) {
