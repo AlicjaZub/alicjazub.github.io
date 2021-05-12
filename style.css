@@ -1,15 +1,41 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	font-size: 62.5%;
-	font-family: sans-serif;
 	background: #393634;
 }
+
 .container {
 	display: flex;
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h1, h2, h4 {
+	color: #ff7292;
+}
+
+h3 {
+	border-bottom: dotted 0.5px #ff7292;
+	padding-bottom: 2.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+span {
+	color: white;
 }
 
 button {
@@ -21,12 +47,12 @@ button {
 }
 
 .menu-image {
-	width: 40px;
-	height: 40px;
-	margin-top: 60px;
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-top: 25%;
 }
 
-.menu-image.logo {
+.menu-logo {
 	width: 6rem;
 	height: 6rem;
 	margin-top: 30px;
@@ -41,12 +67,6 @@ button {
 	position: fixed;
 	height: 100vh;
 	background-color: #3b3837;/*#393634*/	
-	
-}
-
-a {
-	text-decoration: none;
-	color: #ff7292; ;
 }
 
 nav {
@@ -60,17 +80,15 @@ nav a {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: solid 0.5px gray;
-	color: white;
 	margin-left: 30%;
 	margin-right: 30%;
-	text-shadow: 3px 3px #564447;
 	
 }
 
 nav a:hover, nav a.current {      
         color: #ff7292;
 		border-color: #ff7292;
-    }
+}
 	
 .navigation, .links, .logo {
 	width: 100%;
@@ -92,8 +110,6 @@ nav a:hover, nav a.current {
 	top: 2%;
 	right: 2%;
 	padding: 15px;
-	color: #ff7292;
-	border-color: #ff7292;
 	display: none;
 }
 
@@ -110,55 +126,37 @@ nav a:hover, nav a.current {
 	margin-top: auto;
 }
 
-.welcome-heading {
+.info.contact-info {
+	margin-bottom: auto;
+	margin-top: 5%;
+}
+
+.welcome-heading, .welcome-heading2 {
 	font-size: 4rem;
-	font-style: italic;
-	text-shadow: 10px 10px #513c40;
-	font-family: script;
+	font-family: 'Abril Fatface', cursive;
 	text-align: center;
 }
 .welcome-heading2 {
 	font-size: 2rem;
-	font-family: script;
-	text-align: center;
-}
-
-h1,h2, h4 {
-	color: #ff7292;
-}
-
-h3 {
-	border-bottom: dotted 0.5px #ff7292;
-	padding-bottom: 2.5%;
-	margin-left: 10%;
-	margin-right: 10%;
+	padding: 14px;
 }
 
 .left, .right {
 	width: 40%;
 }
 
-
-
-.avatar, .contact-image { /*contact image can be as it is, tbc*/
-	width: 100%;
-}
-
-
-
-
-.left.contact-left, .contact {
-	text-align: center;
-	color: #ff7292;
-	width:100%;
-}
-
 .left.project-left {
 	width: 50%;
 }
 
-span {
-	color: white;
+.avatar { /*contact image can be as it is, tbc*/
+	width: 100%;
+}
+
+.contact, .left.contact-left {
+	text-align: center;
+	color: #ff7292;
+	width:100%;
 }
 
 .project-details {
@@ -167,8 +165,8 @@ span {
 }
 
 .project-img { /*tbc depending on how the project looks*/
-	padding-top: 6%;
-	width:100%;
+	padding-top: 2%;
+	width: 100%;
 }
 
 .software-used-p {
@@ -177,7 +175,8 @@ span {
 	padding: 5%;
 	
 }
-.portfolio-img, .porfolio-heading {
+
+.portfolio-img, .porfolio-heading .avatar {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -185,10 +184,7 @@ span {
 
 .porfolio-heading h1 {
 	margin-top: 6%;
-	font-style: italic;
-	text-shadow: 8px 8px #5e464a;
-	font-family: script;
-	text-align: center;
+
 }
 
 .portfolio-img img {
@@ -205,16 +201,11 @@ footer {
 	padding: 10px;
 }
 
-.info.contact-info {
-	margin-bottom: auto;
-	margin-top: 5%;
-}
-
 .footer-p {
 	color: gray;
 	font-size: 0.8rem;
+	line-height: 1rem;
 }
-
 
 @media only screen and (max-width: 992px) {
 	.menu {
@@ -233,7 +224,6 @@ footer {
 		margin-left: auto;
 	}
 }
-
 
 
 /*
