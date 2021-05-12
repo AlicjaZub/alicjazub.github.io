@@ -9,14 +9,13 @@ body {
 
 .container {
 	display: flex;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-family: 'Poppins', sans-serif;
 }
 
 p {
 	line-height: 1.5rem;
-	padding: 1%;
 }
 
 a {
@@ -34,27 +33,38 @@ h3 {
 	margin-right: 10%;
 }
 
+h1, h2 {
+	font-size: 4rem;
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2rem;
+	padding: 14px;
+}
+
 span {
-	color: white;
+	color: #fff;
 }
 
 button {
 	border-radius: 100%; 
-	color: #ff7292;;
+	color: #ff7292;
 	background: #3b3837;
 	border-color: #ff7292;
 	cursor: pointer;	
 }
 
 .menu-image {
-	width: 2.2rem;
-	height: 2.2rem;
+	width: 35px;
+	height: 35px;
 	margin-top: 25%;
 }
 
 .menu-logo {
-	width: 6rem;
-	height: 6rem;
+	width: 100px;
+	height: 110px;
 	margin-top: 30px;
 }
 
@@ -66,7 +76,7 @@ button {
 	justify-content: space-between;
 	position: fixed;
 	height: 100vh;
-	background-color: #3b3837;/*#393634*/	
+	background-color: #3b3837;	
 }
 
 nav {
@@ -79,33 +89,35 @@ nav a {
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-bottom: solid 0.5px gray;
+	border-bottom: solid 0.5px #808080;
 	margin-left: 30%;
 	margin-right: 30%;
-	color: white;
-	
+	color: #fff;
 }
 
-nav a:hover, nav a.current {      
-    color: #ff7292;
+nav a:hover,
+nav a.current {      
+	color: #ff7292;
 	border-color: #ff7292;
 }
 	
-.navigation, .links, .logo {
+.navigation, 
+.links, 
+.logo {
 	width: 100%;
 }
 
-.links, .logo {
+.links,
+.logo {
 	display: flex;
 	justify-content: space-around;
-	
 }
 
-.left.left-contact a {
+.left.left-details a {
 	color: #ff7292;
 }
 
-.right-section {
+main {
 	width: 100%;
 	margin-left: 15%;
 }
@@ -119,11 +131,10 @@ nav a:hover, nav a.current {
 }
 
 .info {
-	display:flex;
+	display: flex;
 	justify-content: space-around;
 	padding: 30px;
 	margin: 7%;
-	height: auto;
 	flex-wrap: wrap;
 }
 
@@ -136,34 +147,23 @@ nav a:hover, nav a.current {
 	margin-top: 5%;
 }
 
-.welcome-heading, .welcome-heading2 {
-	font-size: 4rem;
-	font-family: 'Abril Fatface', cursive;
-	text-align: center;
-}
-.welcome-heading2 {
-	font-size: 2rem;
-	padding: 14px;
-}
-
-.left, .right {
+.left,
+.right {
 	width: 40%;
 }
 
-.left.project-left {
+.left.project-img {
 	width: 50%;
 }
 
-.avatar { /*contact image can be as it is, tbc*/
-	width: 100%;
-}
-
-.contact, .left.contact-left {
+.contact,
+.left.contact-details {
 	text-align: center;
 	color: #ff7292;
 	width: 100%;
 }
-.left.contact-left a {
+
+.left.contact-details a {
 	color: #ff7292;
 }
 
@@ -172,19 +172,20 @@ nav a:hover, nav a.current {
 	width: auto;
 }
 
-.project-img { /*tbc depending on how the project looks*/
+.left.project-img img { /*tbc depending on how the project looks*/
 	padding-top: 2%;
 	width: 100%;
 }
 
-.software-used-p {
+.software-used {
 	color: #ff7292;
 	font-size: 0.8rem;
 	padding: 5%;
-	
 }
 
-.portfolio-img, .porfolio-heading .avatar {
+.portfolio-img,
+.porfolio-heading, 
+.avatar {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -192,7 +193,6 @@ nav a:hover, nav a.current {
 
 .porfolio-heading h1 {
 	margin-top: 6%;
-
 }
 
 .portfolio-img img {
@@ -209,8 +209,8 @@ footer {
 	padding: 10px;
 }
 
-.footer-p {
-	color: gray;
+.footer-text {
+	color: #808080;
 	font-size: 0.8rem;
 	line-height: 1rem;
 	padding: 0;
@@ -229,11 +229,10 @@ footer {
 		display: inline;
 	}
 	
-	.right-section {
+	main {
 		margin-left: auto;
 	}
 }
-
 
 /*
 Extra small <576px (small phones)
