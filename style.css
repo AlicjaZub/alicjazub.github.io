@@ -231,13 +231,8 @@ footer {
 
 	.menu {
 		width: 12%;
-		min-width: 140px;
+		min-width: 145px;
 		padding: 10px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index:99;
-
 	}
 
 	.menu-button {
@@ -258,6 +253,10 @@ footer {
 
 	.hidden-menu-button {
 		display: none;
+	}
+
+	.project-img {
+		min-width: 500px;
 	}
 }
 
