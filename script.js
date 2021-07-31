@@ -2,12 +2,12 @@ const hiddenMenuButton =  document.querySelector('#hidden-menu-button')
 const menu =  document.querySelector('#menu')
 
 document.querySelector('#menu-button').addEventListener('click', () => {
-    menu.classList.add('menu-hidden')
+    menu.style.display = 'none';
     hiddenMenuButton.style.display = 'inline';
 })
 
 hiddenMenuButton.addEventListener('click', () => {
-    menu.classList.remove('menu-hidden')
+    menu.style.display = 'flex';
     hiddenMenuButton.style.display = 'none';
 })
 
