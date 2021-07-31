@@ -236,11 +236,11 @@ footer {
 	}
 
 	.menu-button {
-		display: block;
+		display: none;
 	}
 
 	.menu-logo {
-		display: none;
+		display: block;
 	}
 
 	.right, .left {
