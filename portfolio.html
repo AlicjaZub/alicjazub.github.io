@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alicja Zubel Developer</title>
+	<script defer src="script.js"></script>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="normalize.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -15,9 +16,9 @@
 <body>
 	<div class="container">
 		
-		<section class="menu">
+		<section id="menu" class="menu">
 			<div class="logo">
-				<button class="menu-image">&lt;</button>
+				<button id="menu-button" class="menu-button">&lt;</button>
 				<a href="index.html"> <img class="menu-logo" src="karate.jpg" alt="logo"> </a>
 			</div>
 			<div class="navigation">
@@ -30,30 +31,32 @@
 				</nav>
 			</div>
 			<div class="links">
-				<a href="https://github.com/AlicjaZub" target="_blank"><img class="menu-image" src="githublight.png" alt="github logo"></a>
-				<a href="https://www.linkedin.com/in/alicja-zubel-07a9515a/" target="_blank"><img class="menu-image" src="lin.png" alt="linkedin logo"></a>
+				<a href="https://github.com/AlicjaZub" target="_blank"><img class="menu-link" src="githublight.png" alt="github logo"></a>
+				<a href="https://www.linkedin.com/in/alicja-zubel-07a9515a/" target="_blank"><img class="menu-link" src="lin.png" alt="linkedin logo"></a>
 			</div>
 		</section>
 		
-		<main>  <!-- to be adjusted with projects -->
-			<button class="hidden-menu-button">MENU</button>
+		<main>
+			<button id="hidden-menu-button" class="hidden-menu-button">
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+			</button>
 			<div class="porfolio-heading">
 				<h1>Projects</h1>
 			</div>
 			<div class="info info-portfolio" >
 				<div class="left project-img">
-					<img src="test.png" alt="project one">
+					<img src="planets.png" alt="planets">
 				</div>
 				<div class="right">
 					
 					<div class="project-details">
-						<h2>Project name</h2>
+						<h2>Planets API</h2>
 						<p>Something about the project</p>
 						<p class="software-used">JavaScript &nbsp &nbsp PHP</p>
 						<div class="links">
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
+							<a href="https://github.com/AlicjaZub/planets" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
 						</div>
 					</div>
 					
@@ -61,38 +64,50 @@
 			</div>
 			<div class="info" >
 				<div class="left project-img">
-					<img src="test.png" alt="project one">
+					<img src="game.png" alt="simon-game">
 				</div>
 				<div class="right">
 					<div class="project-details">
-						<h2>Project name</h2>
+						<h2>Simon Game</h2>
 						<p>Something about the project</p>
 						<p class="software-used">JavaScript &nbsp &nbsp PHP</p>
 						<div class="links">
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
+							<a href="https://github.com/iO-Academy/2021-koalas-memory-pattern-game" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="info" >
 				<div class="left project-img">
-					<img src="test.png" alt="project one">
+					<img src="cars.png" alt="cars">
 				</div>
 				<div class="right">
 					<div class="project-details">
-						<h2>Project name</h2> <!-- might become h4 -->
+						<h2>Cars Auction Site</h2>
 						<p>Something about the project</p>
 						<p class="software-used">JavaScript &nbsp &nbsp PHP</p>
 						<div class="links">
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
-							<a href="https://github.com/AlicjaZub" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
+							<a href="https://github.com/iO-Academy/2021-may-koalaCars" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="info" >
+				<div class="left project-img">
+					<img src="pricing.png" alt="cars">
+				</div>
+				<div class="right">
+					<div class="project-details">
+						<h2>Traffic-based pricing app</h2>
+						<p>Something about the project</p>
+						<p class="software-used">JavaScript &nbsp &nbsp PHP</p>
+						<div class="links">
+							<a href="https://github.com/AlicjaZub/priceApp" target="_blank"><img class="menuimage" src="github32.png" alt="github logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="portfolio-img">
 				<img src="crazy.gif" alt=""> <!-- not sure about the size -->
 			</div>	

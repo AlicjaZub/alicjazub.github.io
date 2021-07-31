@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alicja Zubel Developer</title>
+	<script defer src="script.js"></script>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="normalize.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -15,9 +16,9 @@
 <body>
 	<div class="container">
 		
-		<section class="menu">
+		<section id="menu" class="menu">
 			<div class="logo">
-				<button class="menu-image">&lt;</button>
+				<button id="menu-button" class="menu-button">&lt;</button>
 				<a href="index.html"> <img class="menu-logo" src="karate.jpg" alt="logo"> </a>
 			</div>
 			<div class="navigation">
@@ -30,17 +31,21 @@
 				</nav>
 			</div>
 			<div class="links">
-				<a href="https://github.com/AlicjaZub" target="_blank"><img class="menu-image" src="githublight.png" alt="github logo"></a>
-				<a href="https://www.linkedin.com/in/alicja-zubel-07a9515a/" target="_blank"><img class="menu-image" src="lin.png" alt="linkedin logo"></a>
+				<a href="https://github.com/AlicjaZub" target="_blank"><img class="menu-link" src="githublight.png" alt="github logo"></a>
+				<a href="https://www.linkedin.com/in/alicja-zubel-07a9515a/" target="_blank"><img class="menu-link" src="lin.png" alt="linkedin logo"></a>
 			</div>	
 		</section>
 		
 		<main>
-			<button class="hidden-menu-button">MENU</button>
+			<button id="hidden-menu-button" class="hidden-menu-button">
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+			</button>
 			<div class="info">
 				<div class="left">
 					<h1>About me</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					<p>I'm a passionate full-stack developer with a keen interest in becoming a pen tester one day. I have always been intrigued by the backend and devops and would like to learn more about it. As a trained dancer I am a very active person which led me to discover martial arts and gymnastics. Both of these continue to fulfill my daredevil side and made me want to get onto the British stunt register which I am working on in my free time. </p>
 				</div>
 				<div class="right">
 					<img class="avatar" src="bike.gif" alt="">

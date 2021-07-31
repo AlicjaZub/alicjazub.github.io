@@ -56,7 +56,14 @@ button {
 	cursor: pointer;	
 }
 
-.menu-image {
+.menu-button {
+	width: 35px;
+	height: 35px;
+	margin-top: 25%;
+	display: none;
+}
+
+.menu-link {
 	width: 35px;
 	height: 35px;
 	margin-top: 25%;
@@ -217,21 +224,43 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+
 	.menu {
+		width: 12%;
+		min-width: 140px;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index:99;
+	}
+
+	.menu-button {
+		display: block;
+	}
+
+	.menu-logo {
 		display: none;
 	}
 
 	.right, .left {
-		width: 100%;		
-	}
-	
-	.hidden-menu-button {
-		display: inline;
+		width: 88%;
 	}
 	
 	main {
 		margin-left: auto;
 	}
+}
+
+.menu-hidden {
+	display: none;
+}
+
+.hamburger {
+	width: 25px;
+	height: 2px;
+	background-color: #ff7292;
+	margin: 6px 0;
 }
 
 /*
