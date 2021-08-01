@@ -4,14 +4,16 @@
 
 body {
 	font-size: 62.5%;
-	background: #393634;
+	background: #1f1f1f;
 }
 
 .container {
 	display: flex;
-	color: #fff;
+	color: #fefaf1;
 	font-size: 1rem;
-	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.05rem;
+	line-height: 1;
+	font-family: 'Work Sans', sans-serif;
 }
 
 p {
@@ -23,11 +25,12 @@ a {
 }
 
 h1, h2, h4 {
-	color: #ff7292;
+	color: #3da4ab;
+	letter-spacing: 0.20rem;
 }
 
 h3 {
-	border-bottom: dotted 0.5px #ff7292;
+	border-bottom: dotted 0.5px #3da4ab;
 	padding-bottom: 2.5%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -35,7 +38,7 @@ h3 {
 
 h1, h2 {
 	font-size: 4rem;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
 
@@ -45,14 +48,14 @@ h2 {
 }
 
 span {
-	color: #fff;
+	color: #fefaf1;
 }
 
 button {
 	border-radius: 100%; 
-	color: #ff7292;
-	background: #3b3837;
-	border-color: #ff7292;
+	color: #3da4ab;
+	background: #1f1f1f;
+	border-color: #3da4ab;
 	cursor: pointer;	
 }
 
@@ -83,7 +86,7 @@ button {
 	justify-content: space-between;
 	position: fixed;
 	height: 100vh;
-	background-color: #3b3837;	
+	background-color: #1f1f1f;
 }
 
 nav {
@@ -99,13 +102,13 @@ nav a {
 	border-bottom: solid 0.5px #808080;
 	margin-left: 30%;
 	margin-right: 30%;
-	color: #fff;
+	color: #fefaf1;
 }
 
 nav a:hover,
 nav a.current {      
-	color: #ff7292;
-	border-color: #ff7292;
+	color: #3da4ab;
+	border-color: #3da4ab;
 }
 	
 .navigation, 
@@ -121,7 +124,7 @@ nav a.current {
 }
 
 .left.left-details a {
-	color: #ff7292;
+	color: #3da4ab;
 }
 
 main {
@@ -166,12 +169,12 @@ main {
 .contact,
 .left.contact-details {
 	text-align: center;
-	color: #ff7292;
+	color: #3da4ab;
 	width: 100%;
 }
 
 .left.contact-details a {
-	color: #ff7292;
+	color: #3da4ab;
 }
 
 .project-details {
@@ -185,7 +188,7 @@ main {
 }
 
 .software-used {
-	color: #ff7292;
+	color: #3da4ab;
 	font-size: 0.8rem;
 	padding: 5%;
 }
@@ -209,7 +212,7 @@ main {
 
 footer {
 	text-align: center;
-	border-top: solid 1px #ff7292;
+	border-top: solid 1px #3da4ab;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 10%;
@@ -258,7 +261,7 @@ footer {
 .hamburger {
 	width: 25px;
 	height: 2px;
-	background-color: #ff7292;
+	background-color: #3da4ab;
 	margin: 6px 0;
 }
 
