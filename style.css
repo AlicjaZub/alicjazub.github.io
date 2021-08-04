@@ -4,7 +4,7 @@
 
 body {
 	font-size: 62.5%;
-	background: #1f1f1f;
+	background: #1e1c1e;
 }
 
 .container {
@@ -224,6 +224,10 @@ footer {
 	font-size: 0.8rem;
 	line-height: 1rem;
 	padding: 0;
+}
+
+.avatar-bike {
+	width: 80%;
 }
 
 @media only screen and (max-width: 992px) {
